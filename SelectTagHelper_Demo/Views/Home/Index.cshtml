@@ -1,0 +1,14 @@
+﻿@model SelectTagHelper_Demo.Models.Department
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="">
+    <div class="form-group col-md-4">
+        <label asp-for="DepartmentName" class="control-lable"></label>
+        <select asp-for="Id" asp-items="ViewBag.Id" class="custom-select">
+            <option value="">Choose Department</option>
+        </select>
+    </div>
+</form>
